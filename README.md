@@ -55,6 +55,6 @@ O canal oficial de comunicação é o Slack. Para entrar, é necessário solicit
  2. Criar uma pipeline de CI/CD para o projeto
  3. Testes FORA DO AMBIENTE do chatGPT via chamadas na API do app recem deployado com documentos privados.
  4. Uma vez liberado a cadastro de plugins, instalar dentro do proprio chatGPT
- 5. Especificamente para o confluence, criar uma integração para enviar TODO o conteudo para o plugin e garantir a auto-atualizacao ao longo do tempo.
+ 5. Especificamente para o Confluence, criar uma integração para enviar TODO o conteudo para o plugin e garantir a auto-atualizacao ao longo do tempo.
 
 
