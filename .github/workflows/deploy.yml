@@ -1,0 +1,22 @@
+name: Deploy to Fly.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Login to Fly.io
+        uses: superfly/flyctl-actions/login@v1
+        with:
+          api_key: ${{ secrets.FLY_API_TOKEN }}
+      - name: Build and deploy
+        uses: superfly/flyctl-actions/deploy@v1
+        with:
+          app_name: privateDocs
+          image: Dockerfile
