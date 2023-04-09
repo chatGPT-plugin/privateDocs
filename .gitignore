@@ -137,3 +137,7 @@ dmypy.json
 # macOS .DS_Store files
 .DS_Store
 gcgs.py
+
+Taskfile.yaml
+
+fly.toml
