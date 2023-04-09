@@ -2,7 +2,7 @@
 name = "chatgpt-retrieval-plugin"
 version = "0.1.0"
 description = ""
-authors = ["isafulf <isabella@openai.com>"]
+authors = ["guilhermecgs"]
 readme = "README.md"
 packages = [{include = "server"}]
 
@@ -21,7 +21,7 @@ PyPDF2 = "^3.0.1"
 python-pptx = "^0.6.21"
 python-multipart = "^0.0.6"
 arrow = "^1.2.3"
-redis = "4.5.1"
+pinecone-client = "^2.1.0"
 
 [tool.poetry.scripts]
 start = "server.main:start"

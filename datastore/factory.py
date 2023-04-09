@@ -7,9 +7,8 @@ async def get_datastore() -> DataStore:
     assert datastore is not None
 
     match datastore:
-        case "redis":
-            from datastore.providers.redis_datastore import RedisDataStore
-
-            return await RedisDataStore.init()
+        case "pinecone":
+            from datastore.providers.pinecone_datastore import PineconeDataStore
+            return PineconeDataStore()
         case _:
             raise ValueError(f"Unsupported vector database: {datastore}")
