@@ -29,7 +29,7 @@ O trabalho principal será:
 Para simplificar o máximo, iremos pelo caminho mais simples:
 
 #### Banco de dados
-Redis. Não necessariamente o melhor, mas o mais conhecido e que possui um free tier que iremos conseguir usar.
+Pinecone. Possui um free tier bom. Os demais nao possuem free tier OU não estao prontos ainda.(i.e: Redis precisa de um modulo que nao existe no free tier)
 
 #### Métodos de autenticação
 Nenhum. Os documentos do primeiro teste serão privados, mas não confidenciais. Posteriormente podemos adicionar uma autenticação sem problemas.
